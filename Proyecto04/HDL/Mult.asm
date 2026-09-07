@@ -1,0 +1,23 @@
+@2
+M=0
+@1
+D=M
+@3
+M=D
+(loop)
+    @3
+    D=M
+    @end
+    D;JEQ
+@0
+D=M
+@2
+M=D+M
+@3
+M=M-1
+@loop
+0;JMP
+
+(end)
+    @end
+    0;JMP
